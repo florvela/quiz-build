@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App-logo {
@@ -7,15 +8,8 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +22,97 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Side-bar {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
+
+.Side-bar-content {
+  display: inline-block;
+  margin: 50px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.margin {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.social [class*="fa fa-"] {
+    background-color: white;
+    border-radius: 50px;
+    color: #282c34;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+  margin: 20px auto;
+}
+
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+
+.carousel-inner .carousel-item {
+    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+    -o-transition: -o-transform 1.2s ease-in-out !important;
+    transition: transform 1.2s ease-in-out !important;
+}
+
+
+
+.card-img {
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-text{
+  padding-bottom: 20px;
+}
+
+.testing .card{
+  width: 300px;
+  display: inline-block;
+  background-color: red;
+  margin-top: 20px;
+}
+
+h1, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.no-outline, [type=text].form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.answer-check {
+  font-size: calc(13px + 1vmin);
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+/**/
+
